@@ -1,0 +1,306 @@
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #454545;
+}
+main{
+	max-width: 1024px;
+	height: 100%;
+	/* background-color: #454545; */
+	margin: 0 auto;
+}
+.head-wenzi{
+	float: right;
+	line-height: 40px;
+	font-size: 12px;
+	color: #fff;
+}
+
+nav{
+	width: 100%;
+	height: 44px;
+	background-color: black;
+}
+nav main{
+	text-align: justify;
+	/* 文本两端对齐 *//* 只能让行内块元素两端对齐 */
+	/* display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; */
+}
+nav main:after{  /* 处理父元素的BUG */
+	content: "";
+	display: inline-block;
+	/* （只能指定为行内块元素） */
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+nav main a{
+	font-size: 14px;
+	line-height: 44px;
+	color: #fff;
+}
+
+#banner{
+	width: 100%;
+	height: 500px;
+	background-color: #fecfff;
+	position: relative;
+}
+
+.banner-img{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/sgouji3.jpg');
+	background-size: cover;
+	background-position: top center;
+}
+.banner-wenzi{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 217px;
+	/* background-color: #fff; */
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	align-content: center;
+	/* text-align: center; */
+}
+.banner-wenzi h1{
+	width: 100%;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+}
+.huodong{
+	width: 100%;
+	background-color: blue;
+	margin-top: 2px;
+	overflow: hidden;
+}
+.huodong1{
+	width: 25%;
+	height: 268px;
+	background-color: yellowgreen;
+	float: left;
+	background-image: url('../img/qgaaa3.jpg');
+	background-position: bottom center;
+	background-size: cover;
+	border: 1px solid #000;
+	border-left: 0;
+}
+.huodong2{
+	width: 25%;
+	height: 268px;
+	background-color: yellowgreen;
+	float: left;
+	background-image: url('../img/pga4.jpg');
+	background-position: bottom center;
+	background-size: cover;
+	border: 1px solid #000;
+	border-left: 0;
+}
+.huodong3{
+	width: 25%;
+	height: 268px;
+	background-color: yellowgreen;
+	float: left;
+	background-image: url('../img/xainei.1.jpg');
+	background-position: bottom center;
+	background-size: cover;
+	border: 1px solid #000;
+	border-left: 0;
+}
+.huodong4{
+	width: 25%;
+	height: 268px;
+	background-color: yellowgreen;
+	float: left;
+	background-image: url('../img/renshou2.png');
+	background-position: bottom center;
+	background-size: cover;
+	border: 1px solid #000;
+	border-left: 0;
+}
+footer{
+	width: 100%;
+	background-color: #f2f2f2;
+	margin-top: 1px;
+	overflow: hidden;
+}
+.f-t{
+	max-width: 1024px;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+	padding: 17px 0 11px;    
+	border-bottom: 1px solid gray;
+}
+.t-wengzi1{
+	font-size: 12px;
+}
+.f-z{
+	max-width: 1024px;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+	padding-top: 40px;
+	overflow: hidden;
+}
+.f-z ul{
+	width: 20%;
+	background-color: #f2f2f2;
+	float: left;
+	overflow: hidden;
+}
+.f-z ul li{
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+.f-z ul li2{
+	font-size: 16px;
+	font-weight: bolder;
+}
+/* .f-z ul{
+	display: block;
+}
+.f-z xiao{
+	display: none;
+} */
+.f-f{
+	max-width: 1024px;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+	padding: 17px 0 21px;
+}
+.f-f ul{
+	font-size: 12px;
+	margin-bottom: 7px;
+}
+.f-f ul li1{
+	border-bottom: 1px solid gray;
+}
+/* 屏幕<1024px时 */
+@media screen and (max-width: 1024px){
+	main{
+		padding-right: 24px;
+	}
+	nav main{
+		padding-left: 24px;
+	}
+	#banner{
+		height: 460px;
+		background-image: url('../img/shouji2.jpg')
+	}
+	.banner-wenzi{
+		height: 211px;
+	}
+	.banner-wenzi h1{
+		font-size: 32px;
+	}
+	.huodong1{
+		width: 50%;
+		background-image: url('../img/qgaaa2.jpg');
+	}
+	.huodong2{
+		width: 50%;
+		background-image: url('../img/pga1.jpg');
+	}
+	.huodong3{
+		width: 50%;
+		background-image: url('../img/xianei.2.jpg');
+	}
+	.huodong4{
+		width: 50%;
+		background-image: url('../img/renshou1.png');
+	}
+	.f-t{
+		padding: 0 24px;
+	}
+	.f-z{
+		background-color: #f2f2f2;
+		padding-top: 40px;
+		padding-left: 24px;
+	}
+	.f-z ul{
+		/* display: block; */
+		float: left;
+		background-color: #f2f2f2;
+	}
+	/* .f-z xiao{
+		display: none;	
+	} */
+	.f-f{
+		background-color: #f2f2f2;
+		margin: 0 auto;
+		padding-left: 24px;
+	} 
+}
+/* 屏幕大于767 */
+@media screen and (min-width: 767px) {
+	.nav-big{
+		display: block;
+	}
+	.nav-small{
+		display: none;
+	}
+	.f-z{
+		display: block;
+	}
+	.xiao{
+		display: none;
+	}
+}
+/* 屏幕小于767 */
+@media screen and (max-width: 767px) {
+	.nav-big{
+		display: none;
+	}
+	.nav-small{
+		display: block;
+	}
+	#banner{
+		height: 380px;
+		background-image: url('../img/shouji1.jpg')
+	}
+	.banner-wenzi{
+		height: 201px;
+	}
+	.banner-wenzi h1{
+		font-size: 28px;
+	}
+	.huodong1{
+		width: 100%;
+		background-image: url('../img/pgaaa1.jpg');
+	}
+	.huodong2{
+		width: 100%;
+		background-image: url('../img/pga.jpg');
+	}
+	.huodong3{
+	width: 100%;
+	background-image: url('../img/xianei.3.jpg');
+	}
+	.huodong4{
+	width: 100%;
+	background-image: url('../img/how_to_shoot_on_iphone_large.jpg');
+	}
+	.f-t{
+		padding: 0 24px;
+	}
+	.f-z{
+		display: none;
+	}
+	.xiao{
+		display: block;
+	}
+	.xiao-box{
+		border-bottom: 1px solid black;
+		font-size: 12px;
+		padding: 10px 24px;
+	}
+	.f-f{
+	padding: 0 24px;
+	} 
+}
